@@ -201,7 +201,7 @@ def verify():
 def init():
     """ Initilize nagios configuration to use okconfig """
     print "Initilizating nagios to use okconfig..."
-    maincfg = pynag.Parsers.Config().guess_cfg_file()
+    maincfg = pynag.Parsers.config().guess_cfg_file()
     template_dir = okconfig.config.template_directory
     dest_dir = okconfig.config.destination_directory
     print "Using configuration file %s" % (maincfg, )
